@@ -14,4 +14,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Core\ZenBlogServer.Application\ZenBlogServer.Application.csproj" />
+  </ItemGroup>
+
 </Project>
