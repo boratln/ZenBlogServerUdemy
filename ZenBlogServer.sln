@@ -3,9 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36202.13 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9E8E1D38-2BD7-48A7-B1EC-47088A6C3F3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{29B24865-D34E-411B-B2AB-2D57F2B7695B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenBlogServer.Domain", "Core\ZenBlogServer.Domain\ZenBlogServer.Domain.csproj", "{EBC65387-707D-4AA2-8271-71D0E9C6443F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenBlogServer.Application", "Core\ZenBlogServer.Application\ZenBlogServer.Application.csproj", "{171B8FF0-9B07-4892-AD53-1666DBC08131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenBlogServer.Persistence", "ZenBlogServer.Persistence\ZenBlogServer.Persistence.csproj", "{4DC5B537-70DB-428E-9350-61E38EA183A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenBlogServer.Infrastructure", "ZenBlogServer.Infrastructure\ZenBlogServer.Infrastructure.csproj", "{401ED9F1-1868-4F93-9FA0-B2701D394B60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenBlogServer.API", "ZenBlogServer.API\ZenBlogServer.API.csproj", "{2C306A66-AB53-4A3D-A9E9-983B63D0ED91}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBC65387-707D-4AA2-8271-71D0E9C6443F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC65387-707D-4AA2-8271-71D0E9C6443F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC65387-707D-4AA2-8271-71D0E9C6443F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC65387-707D-4AA2-8271-71D0E9C6443F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171B8FF0-9B07-4892-AD53-1666DBC08131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171B8FF0-9B07-4892-AD53-1666DBC08131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171B8FF0-9B07-4892-AD53-1666DBC08131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171B8FF0-9B07-4892-AD53-1666DBC08131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC5B537-70DB-428E-9350-61E38EA183A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC5B537-70DB-428E-9350-61E38EA183A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC5B537-70DB-428E-9350-61E38EA183A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC5B537-70DB-428E-9350-61E38EA183A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401ED9F1-1868-4F93-9FA0-B2701D394B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401ED9F1-1868-4F93-9FA0-B2701D394B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401ED9F1-1868-4F93-9FA0-B2701D394B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401ED9F1-1868-4F93-9FA0-B2701D394B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C306A66-AB53-4A3D-A9E9-983B63D0ED91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C306A66-AB53-4A3D-A9E9-983B63D0ED91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C306A66-AB53-4A3D-A9E9-983B63D0ED91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C306A66-AB53-4A3D-A9E9-983B63D0ED91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBC65387-707D-4AA2-8271-71D0E9C6443F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{171B8FF0-9B07-4892-AD53-1666DBC08131} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4DC5B537-70DB-428E-9350-61E38EA183A5} = {9E8E1D38-2BD7-48A7-B1EC-47088A6C3F3B}
+		{401ED9F1-1868-4F93-9FA0-B2701D394B60} = {9E8E1D38-2BD7-48A7-B1EC-47088A6C3F3B}
+		{2C306A66-AB53-4A3D-A9E9-983B63D0ED91} = {29B24865-D34E-411B-B2AB-2D57F2B7695B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC60241D-85C5-40E3-A842-689EA6F0524A}
